@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse4Pets</title>
+    <!-- google font sora  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- daisyUI and Tailwind CSS CDN  start -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        font-family: "Sora", serif;
+        color: #3f2a00;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="bg-[#FFF9F4]">
+        <div class="navbar container mx-auto">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Item 1</a></li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <!-- logo start  -->
+            <a
+              class="logo cursor-default text-lg flex gap-3 items-center font-medium"
+            >
+              <img src="assets/logo-headernew.png" alt="logo" />
+              <span class="flex items-center"
+                >Browse
+                <span
+                  class="text-[#FEC53E] text-4xl font-bold rotate-6 animate-bounce -mb-1"
+                  >4</span
+                >
+                <span>Pets</span></span
+              ></a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <a
+                  class="hover:font-medium hover:bg-transparent active:bg-transparent"
+                  >Find a pet</a
+                >
+              </li>
+              <li>
+                <a class="hover:font-medium hover:bg-transparent">Breeds</a>
+              </li>
+              <li>
+                <a class="hover:font-medium hover:bg-transparent">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end flex gap-4 items-center">
+            <!-- icons group  start -->
+            <div class="flex gap-4 items-center">
+              <!-- bell icon  -->
+              <a
+                class="btn p-0 bg-transparent border-transparent shadow-none hover:bg-transparent hover:border-transparent"
+                href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-7 hover:fill-[#FEC53E] hover:scale-125 transition-all"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+                  />
+                </svg>
+              </a>
+              <!-- search icon  -->
+              <a
+                href="#"
+                class="btn p-0 bg-transparent border-transparent shadow-none hover:bg-transparent hover:border-transparent"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-7 hover:fill-[#FEC53E] hover:scale-125 transition-all"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <!-- button group  start -->
+            <div class="flex gap-3 items-center">
+              <a
+                class="btn bg-transparent border-[#FEC53E] hover:bg-transparent hover:border-[#FEC53E] hover:scale-105 hover:shadow-md"
+                >Login</a
+              >
+              <a
+                class="btn bg-[#FEC53E] hover:bg-[#FEC53E] hover:border-[#FEC53E] hover:scale-105 hover:shadow-md"
+                >Register</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
