@@ -27,34 +27,11 @@
   </head>
   <body>
     <header>
-      <nav class="bg-[#FFF9F4]">
+      <!-- navigation section start  -->
+      <nav class="bg-[#FFF9F4] py-1 border-b border-[#FEC53E] md:border-none">
         <div class="navbar container mx-auto">
+          <!-- navigation logo start   -->
           <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-              >
-                <li><a>Item 1</a></li>
-                <li><a>Item 3</a></li>
-              </ul>
-            </div>
             <!-- logo start  -->
             <a
               class="logo cursor-default text-lg flex gap-3 items-center font-medium"
@@ -70,6 +47,7 @@
               ></a
             >
           </div>
+          <!-- navigation center link start  -->
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
               <li>
@@ -86,58 +64,111 @@
               </li>
             </ul>
           </div>
-          <div class="navbar-end flex gap-4 items-center">
-            <!-- icons group  start -->
-            <div class="flex gap-4 items-center">
-              <!-- bell icon  -->
-              <a
-                class="btn p-0 bg-transparent border-transparent shadow-none hover:bg-transparent hover:border-transparent"
-                href="#"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-7 hover:fill-[#FEC53E] hover:scale-125 transition-all"
+          <!-- navigation icon button hamburger menu and menu drawer start   -->
+          <div class="navbar-end">
+            <div class="gap-4 items-center flex">
+              <!-- icons group  start -->
+              <div class="gap-4 items-center hidden md:flex">
+                <!-- bell icon  -->
+                <a
+                  class="btn p-0 bg-transparent border-transparent shadow-none hover:bg-transparent hover:border-transparent"
+                  href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-7 hover:fill-[#FEC53E] hover:scale-125 transition-all"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+                    />
+                  </svg>
+                </a>
+                <!-- search icon  -->
+                <a
+                  href="#"
+                  class="btn p-0 bg-transparent border-transparent shadow-none hover:bg-transparent hover:border-transparent"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-7 hover:fill-[#FEC53E] hover:scale-125 transition-all"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- button group  start -->
+              <div class="gap-3 items-center hidden md:flex">
+                <a
+                  class="btn bg-transparent border-[#FEC53E] hover:bg-transparent hover:border-[#FEC53E] hover:scale-105 hover:shadow-md"
+                  >Login</a
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
-                  />
-                </svg>
-              </a>
-              <!-- search icon  -->
-              <a
-                href="#"
-                class="btn p-0 bg-transparent border-transparent shadow-none hover:bg-transparent hover:border-transparent"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-7 hover:fill-[#FEC53E] hover:scale-125 transition-all"
+                <a
+                  class="btn bg-[#FEC53E] hover:bg-[#FEC53E] hover:border-[#FEC53E] hover:scale-105 hover:shadow-md"
+                  >Register</a
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                  />
-                </svg>
-              </a>
-            </div>
-            <!-- button group  start -->
-            <div class="flex gap-3 items-center">
-              <a
-                class="btn bg-transparent border-[#FEC53E] hover:bg-transparent hover:border-[#FEC53E] hover:scale-105 hover:shadow-md"
-                >Login</a
-              >
-              <a
-                class="btn bg-[#FEC53E] hover:bg-[#FEC53E] hover:border-[#FEC53E] hover:scale-105 hover:shadow-md"
-                >Register</a
-              >
+              </div>
+              <!-- drawer start  -->
+              <div class="drawer">
+                <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                <!-- drawer icon hamburger start  -->
+                <div class="drawer-content">
+                  <label for="my-drawer" class="cursor-pointer"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-8"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                      />
+                    </svg>
+                  </label>
+                </div>
+                <!-- drawer function start  -->
+                <div class="drawer-side">
+                  <label
+                    for="my-drawer"
+                    aria-label="close sidebar"
+                    class="drawer-overlay"
+                  ></label>
+                  <ul class="menu bg-[#FFF9F4] min-h-full w-80 p-4">
+                    <!-- Sidebar content here -->
+                    <li>
+                      <a
+                        class="hover:font-medium hover:bg-transparent active:bg-transparent"
+                        >Find a pet</a
+                      >
+                    </li>
+                    <li>
+                      <a class="hover:font-medium hover:bg-transparent"
+                        >Breeds</a
+                      >
+                    </li>
+                    <li>
+                      <a class="hover:font-medium hover:bg-transparent"
+                        >Contact us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
