@@ -27,6 +27,11 @@
         font-family: "ADLaM Display", serif;
       }
     </style>
+    <link
+      rel="shortcut icon"
+      href="assets/logo-headernew.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header>
@@ -126,7 +131,7 @@
                   >
                 </div>
                 <!-- drawer start  -->
-                <div class="drawer">
+                <div class="drawer block lg:hidden">
                   <input id="my-drawer" type="checkbox" class="drawer-toggle" />
                   <!-- drawer icon hamburger start  -->
                   <div class="drawer-content">
@@ -150,14 +155,31 @@
                     </label>
                   </div>
                   <!-- drawer function start  -->
-                  <div class="drawer-side">
+                  <div class="drawer-side z-50">
                     <label
                       for="my-drawer"
                       aria-label="close sidebar"
                       class="drawer-overlay"
                     ></label>
+                    <!-- sidebar content  -->
                     <ul class="menu bg-[#FFF9F4] min-h-full w-80 p-4">
-                      <!-- Sidebar content here -->
+                      <li>
+                        <a
+                          class="logo text-lg flex gap-3 font-medium scale-75 -translate-x-9 hover:bg-transparent"
+                        >
+                          <!-- logo img  -->
+                          <img src="assets/logo-headernew.png" alt="logo" />
+                          <!-- log text  -->
+                          <span class="items-center"
+                            >Browse
+                            <span
+                              class="text-[#FEC53E] text-4xl font-bold rotate-6 animate-bounce -mb-1"
+                              >4</span
+                            >
+                            <span>Pets</span></span
+                          >
+                        </a>
+                      </li>
                       <li>
                         <a
                           class="hover:font-medium hover:bg-transparent active:bg-transparent"
