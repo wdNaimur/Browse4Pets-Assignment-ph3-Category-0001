@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Browse4Pets</title>
-    <!-- google font sora  -->
+    <!-- google font sora for p and adlam for heading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
     <!-- daisyUI and Tailwind CSS CDN  start -->
@@ -21,7 +21,10 @@
     <style>
       * {
         font-family: "Sora", serif;
-        color: #3f2a00;
+        color: #432004;
+      }
+      h1 {
+        font-family: "ADLaM Display", serif;
       }
     </style>
   </head>
@@ -179,6 +182,29 @@
           </div>
         </div>
       </nav>
+      <section
+        class="container mx-auto px-4 max-h-[749px] bg-[url(./assets/cat-big.png)] bg-contain bg-no-repeat bg-right-bottom"
+      >
+        <!-- hero text  -->
+        <div
+          class="lg:pt-24 md:pt-20 sm:pt-10 pt-8 lg:80 md:pb-70 sm:pb-52 pb-32"
+        >
+          <h1 class="lg:text-6xl md:text-5xl sm:text-4xl text-3xl mb-4">
+            Pamper Your Pet,<br />
+            Because They Deserve <br />
+            the Best
+          </h1>
+          <p class="md:text-xl sm:text-lg text-base opacity-75 max-w-2xl mb-6">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button
+            class="btn bg-[#FEC53E] hover:bg-[#FEC53E] hover:border-[#FEC53E] hover:scale-105 hover:shadow-md"
+          >
+            Find a pet
+          </button>
+        </div>
+      </section>
     </header>
   </body>
 </html>
