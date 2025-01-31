@@ -23,7 +23,8 @@
         font-family: "Sora", serif;
         color: #432004;
       }
-      h1 {
+      h1,
+      h2 {
         font-family: "ADLaM Display", serif;
       }
     </style>
@@ -118,6 +119,7 @@
                   </svg>
                 </a>
               </div>
+              <!-- button and drawer group start  -->
               <div class="flex items-center gap-2">
                 <!-- button group  start -->
                 <div class="gap-3 items-center hidden md:flex">
@@ -204,8 +206,9 @@
           </div>
         </div>
       </nav>
+      <!-- hero section start  -->
       <section
-        class="container mx-auto px-4 max-h-[749px] bg-[url(./assets/cat-big.png)] bg-contain bg-no-repeat bg-right-bottom"
+        class="container mx-auto px-4 max-h-[749px] bg-[url(./assets/cat-big.png)] bg-contain bg-no-repeat bg-right-bottom lg:mb-36 md:mb-24 mb-14"
       >
         <!-- hero text  -->
         <div
@@ -221,12 +224,351 @@
             furry friends. Shop now and make tails wag with joy!
           </p>
           <button
-            class="btn bg-[#FEC53E] hover:bg-[#FEC53E] hover:border-[#FEC53E] hover:scale-105 hover:shadow-md"
+            class="btn bg-[#FEC53E] hover:bg-[#FEC53E] hover:border-[#FEC53E] hover:scale-105 hover:shadow-md animate-pulse hover:ani"
           >
             Find a pet
           </button>
         </div>
       </section>
     </header>
+    <section class="container mx-auto px-4 lg:mb-32 md:mb-24 mb-14">
+      <h2 class="lg:text-4xl md:text-3xl text-2xl lg:mb-12 md:mb-10 mb-8">
+        Browse By Categories
+      </h2>
+      <!-- all cards  -->
+      <div
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-[10px] md:gap-6"
+      >
+        <!-- single cards dog -->
+        <div
+          class="bg-[#F9DF8A] rounded-xl px-10 md:px-12 py-7 md:py-8 flex items-center flex-col cursor-pointer hover:scale-105 hover:shadow-sm transition-all"
+        >
+          <figure
+            class="md:w-[105px] md:h-[105px] w-[90px] h-[90px] bg-white flex items-center justify-center rounded-full"
+          >
+            <img src="assets/dog-cartoon.png" alt="dog" />
+          </figure>
+          <div class="md:pt-6 pt-5">
+            <h2 class="md:text-xl text-base mb-4 text-center">Dog</h2>
+            <p class="md:text-base text-sm text-center">3 items</p>
+          </div>
+        </div>
+        <!-- single cards Fish -->
+        <div
+          class="bg-[#F9DF8A] rounded-xl px-10 md:px-12 py-7 md:py-8 flex items-center flex-col cursor-pointer hover:scale-105 hover:shadow-sm transition-all"
+        >
+          <figure
+            class="md:w-[105px] md:h-[105px] w-[90px] h-[90px] bg-white flex items-center justify-center rounded-full"
+          >
+            <img src="assets/fish-cartoon.png" alt="Fish" />
+          </figure>
+          <div class="md:pt-6 pt-5">
+            <h2 class="md:text-xl text-base mb-4 text-center">Fish</h2>
+            <p class="md:text-base text-sm text-center">3 items</p>
+          </div>
+        </div>
+        <!-- single cards Cat -->
+        <div
+          class="bg-[#F9DF8A] rounded-xl px-10 md:px-12 py-7 md:py-8 flex items-center flex-col cursor-pointer hover:scale-105 hover:shadow-sm transition-all"
+        >
+          <figure
+            class="md:w-[105px] md:h-[105px] w-[90px] h-[90px] bg-white flex items-center justify-center rounded-full"
+          >
+            <img src="assets/cat-cartoon.png" alt="Cat" />
+          </figure>
+          <div class="md:pt-6 pt-5">
+            <h2 class="md:text-xl text-base mb-4 text-center">Cat</h2>
+            <p class="md:text-base text-sm text-center">3 items</p>
+          </div>
+        </div>
+        <!-- single cards Birds -->
+        <div
+          class="bg-[#F9DF8A] rounded-xl px-10 md:px-12 py-7 md:py-8 flex items-center flex-col cursor-pointer hover:scale-105 hover:shadow-sm transition-all"
+        >
+          <figure
+            class="md:w-[105px] md:h-[105px] w-[90px] h-[90px] bg-white flex items-center justify-center rounded-full"
+          >
+            <img src="assets/bird-cartoon.png" alt="Birds" />
+          </figure>
+          <div class="md:pt-6 pt-5">
+            <h2 class="md:text-xl text-base mb-4 text-center">Birds</h2>
+            <p class="md:text-base text-sm text-center">3 items</p>
+          </div>
+        </div>
+        <!-- single cards Small pet -->
+        <div
+          class="bg-[#F9DF8A] rounded-xl px-10 md:px-12 py-7 md:py-8 flex items-center flex-col cursor-pointer hover:scale-105 hover:shadow-sm transition-all"
+        >
+          <figure
+            class="md:w-[105px] md:h-[105px] w-[90px] h-[90px] bg-white flex items-center justify-center rounded-full"
+          >
+            <img src="assets/mouse-cartoon.png" alt="Small pet" />
+          </figure>
+          <div class="md:pt-6 pt-5">
+            <h2 class="md:text-xl text-base mb-4 text-center">Small pet</h2>
+            <p class="md:text-base text-sm text-center">3 items</p>
+          </div>
+        </div>
+        <!-- single cards Rabit -->
+        <div
+          class="bg-[#F9DF8A] rounded-xl px-10 md:px-12 py-7 md:py-8 flex items-center flex-col cursor-pointer hover:scale-105 hover:shadow-sm transition-all"
+        >
+          <figure
+            class="md:w-[105px] md:h-[105px] w-[90px] h-[90px] bg-white flex items-center justify-center rounded-full"
+          >
+            <img src="assets/rabbit-cartoon.png" alt="Rabit" />
+          </figure>
+          <div class="md:pt-6 pt-5">
+            <h2 class="md:text-xl text-base mb-4 text-center">Dog</h2>
+            <p class="md:text-base text-sm text-center">3 items</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="md:bg-[#FFF9F4] bg-white mb-14 lg:mb-36 md:mb-24">
+      <div class="container mx-auto px-4 lg:py-36 md:py-20 py-0">
+        <h2 class="lg:text-4xl md:text-3xl text-2xl lg:mb-12 md:mb-10 mb-8">
+          Trending Pet Products
+        </h2>
+        <!-- Trending Pet Products grid  -->
+        <div
+          class="grid xl:grid-cols-5 lg:grid-cols-4 grid-cols-2 md:gap-6 gap-3"
+        >
+          <!-- big card  -->
+          <div
+            class="bg-[#F9DF8A] px-8 pt-12 pb-44 rounded-xl relative xl:col-span-2 col-span-2 xl:row-span-3 row-span-3 lg:col-span-2 lg:row-span-4"
+          >
+            <h2 class="lg:text-4xl md:text-3xl text-2xl lg:mb-5 mb-[18px]">
+              T- Shirt For Dogs
+            </h2>
+            <p class="text-sm md:text-base max-w-[344px] lg:mb-5 mb-[18px]">
+              Discover a world of treats, toys, and essentials handpicked for
+            </p>
+            <button
+              class="btn bg-white hover:bg-white hover:border-[#FEC53E] hover:scale-105 hover:shadow-md"
+            >
+              Find a pet
+            </button>
+            <img
+              class="absolute bottom-0 right-0 lg:w-[244px] md:w-[220px] w-[200px] z-0"
+              src="assets/cute-pet-mid.png"
+              alt=""
+            />
+          </div>
+          <!-- small card  -->
+          <div
+            class="bg-white rounded-lg flex gap-4 md:py-4 py-3 md:ps-4 ps-3 border border-[rgba(67,32,4,0.1)] hover:border-[#FEC53E] hover:scale-105 hover:shadow-md transition-all cursor-pointer"
+          >
+            <!-- left part  -->
+            <div
+              class="bg-[#FFF9F4] md:w-[86px] md:h-[86px] w-14 h-14 flex items-center justify-center p-4 rounded-lg"
+            >
+              <img class="w-[48px]" src="assets/dog-cartoon.png" alt="dog" />
+            </div>
+            <!-- right part  -->
+            <div>
+              <div class="flex items-center md:gap-3 gap-1 md:mb-2 mb-1">
+                <img
+                  class="sm:w-[18px] w-[12px]"
+                  src="assets/star.svg"
+                  alt="rating"
+                />
+                <p class="pt-1 sm:text-base text-[9px] font-medium">4.5</p>
+              </div>
+              <h3 class="sm:text-xl text-xs font-medium mb-1">Pet Bed</h3>
+              <p class="sm:text-base text-xs">$39.99</p>
+            </div>
+          </div>
+          <!-- small card  -->
+          <div
+            class="bg-white rounded-lg flex gap-4 md:py-4 py-3 md:ps-4 ps-3 border border-[rgba(67,32,4,0.1)] hover:border-[#FEC53E] hover:scale-105 hover:shadow-md transition-all cursor-pointer"
+          >
+            <!-- left part  -->
+            <div
+              class="bg-[#FFF9F4] md:w-[86px] md:h-[86px] w-14 h-14 flex items-center justify-center p-4 rounded-lg"
+            >
+              <img class="w-[48px]" src="assets/dog-cartoon.png" alt="dog" />
+            </div>
+            <!-- right part  -->
+            <div>
+              <div class="flex items-center md:gap-3 gap-1 md:mb-2 mb-1">
+                <img
+                  class="sm:w-[18px] w-[12px]"
+                  src="assets/star.svg"
+                  alt="rating"
+                />
+                <p class="pt-1 sm:text-base text-[9px] font-medium">4.5</p>
+              </div>
+              <h3 class="sm:text-xl text-xs font-medium mb-1">Pet Bed</h3>
+              <p class="sm:text-base text-xs">$39.99</p>
+            </div>
+          </div>
+          <!-- small card  -->
+          <div
+            class="bg-white rounded-lg flex gap-4 md:py-4 py-3 md:ps-4 ps-3 border border-[rgba(67,32,4,0.1)] hover:border-[#FEC53E] hover:scale-105 hover:shadow-md transition-all cursor-pointer"
+          >
+            <!-- left part  -->
+            <div
+              class="bg-[#FFF9F4] md:w-[86px] md:h-[86px] w-14 h-14 flex items-center justify-center p-4 rounded-lg"
+            >
+              <img class="w-[48px]" src="assets/dog-cartoon.png" alt="dog" />
+            </div>
+            <!-- right part  -->
+            <div>
+              <div class="flex items-center md:gap-3 gap-1 md:mb-2 mb-1">
+                <img
+                  class="sm:w-[18px] w-[12px]"
+                  src="assets/star.svg"
+                  alt="rating"
+                />
+                <p class="pt-1 sm:text-base text-[9px] font-medium">4.5</p>
+              </div>
+              <h3 class="sm:text-xl text-xs font-medium mb-1">Pet Bed</h3>
+              <p class="sm:text-base text-xs">$39.99</p>
+            </div>
+          </div>
+          <!-- small card  -->
+          <div
+            class="bg-white rounded-lg flex gap-4 md:py-4 py-3 md:ps-4 ps-3 border border-[rgba(67,32,4,0.1)] hover:border-[#FEC53E] hover:scale-105 hover:shadow-md transition-all cursor-pointer"
+          >
+            <!-- left part  -->
+            <div
+              class="bg-[#FFF9F4] md:w-[86px] md:h-[86px] w-14 h-14 flex items-center justify-center p-4 rounded-lg"
+            >
+              <img class="w-[48px]" src="assets/dog-cartoon.png" alt="dog" />
+            </div>
+            <!-- right part  -->
+            <div>
+              <div class="flex items-center md:gap-3 gap-1 md:mb-2 mb-1">
+                <img
+                  class="sm:w-[18px] w-[12px]"
+                  src="assets/star.svg"
+                  alt="rating"
+                />
+                <p class="pt-1 sm:text-base text-[9px] font-medium">4.5</p>
+              </div>
+              <h3 class="sm:text-xl text-xs font-medium mb-1">Pet Bed</h3>
+              <p class="sm:text-base text-xs">$39.99</p>
+            </div>
+          </div>
+          <!-- small card  -->
+          <div
+            class="bg-white rounded-lg flex gap-4 md:py-4 py-3 md:ps-4 ps-3 border border-[rgba(67,32,4,0.1)] hover:border-[#FEC53E] hover:scale-105 hover:shadow-md transition-all cursor-pointer"
+          >
+            <!-- left part  -->
+            <div
+              class="bg-[#FFF9F4] md:w-[86px] md:h-[86px] w-14 h-14 flex items-center justify-center p-4 rounded-lg"
+            >
+              <img class="w-[48px]" src="assets/dog-cartoon.png" alt="dog" />
+            </div>
+            <!-- right part  -->
+            <div>
+              <div class="flex items-center md:gap-3 gap-1 md:mb-2 mb-1">
+                <img
+                  class="sm:w-[18px] w-[12px]"
+                  src="assets/star.svg"
+                  alt="rating"
+                />
+                <p class="pt-1 sm:text-base text-[9px] font-medium">4.5</p>
+              </div>
+              <h3 class="sm:text-xl text-xs font-medium mb-1">Pet Bed</h3>
+              <p class="sm:text-base text-xs">$39.99</p>
+            </div>
+          </div>
+          <!-- small card  -->
+          <div
+            class="bg-white rounded-lg flex gap-4 md:py-4 py-3 md:ps-4 ps-3 border border-[rgba(67,32,4,0.1)] hover:border-[#FEC53E] hover:scale-105 hover:shadow-md transition-all cursor-pointer"
+          >
+            <!-- left part  -->
+            <div
+              class="bg-[#FFF9F4] md:w-[86px] md:h-[86px] w-14 h-14 flex items-center justify-center p-4 rounded-lg"
+            >
+              <img class="w-[48px]" src="assets/dog-cartoon.png" alt="dog" />
+            </div>
+            <!-- right part  -->
+            <div>
+              <div class="flex items-center md:gap-3 gap-1 md:mb-2 mb-1">
+                <img
+                  class="sm:w-[18px] w-[12px]"
+                  src="assets/star.svg"
+                  alt="rating"
+                />
+                <p class="pt-1 sm:text-base text-[9px] font-medium">4.5</p>
+              </div>
+              <h3 class="sm:text-xl text-xs font-medium mb-1">Pet Bed</h3>
+              <p class="sm:text-base text-xs">$39.99</p>
+            </div>
+          </div>
+          <!-- small card  -->
+          <div
+            class="bg-white rounded-lg flex gap-4 md:py-4 py-3 md:ps-4 ps-3 border border-[rgba(67,32,4,0.1)] hover:border-[#FEC53E] hover:scale-105 hover:shadow-md transition-all cursor-pointer"
+          >
+            <!-- left part  -->
+            <div
+              class="bg-[#FFF9F4] md:w-[86px] md:h-[86px] w-14 h-14 flex items-center justify-center p-4 rounded-lg"
+            >
+              <img class="w-[48px]" src="assets/dog-cartoon.png" alt="dog" />
+            </div>
+            <!-- right part  -->
+            <div>
+              <div class="flex items-center md:gap-3 gap-1 md:mb-2 mb-1">
+                <img
+                  class="sm:w-[18px] w-[12px]"
+                  src="assets/star.svg"
+                  alt="rating"
+                />
+                <p class="pt-1 sm:text-base text-[9px] font-medium">4.5</p>
+              </div>
+              <h3 class="sm:text-xl text-xs font-medium mb-1">Pet Bed</h3>
+              <p class="sm:text-base text-xs">$39.99</p>
+            </div>
+          </div>
+          <!-- small card  -->
+          <div
+            class="bg-white rounded-lg flex gap-4 md:py-4 py-3 md:ps-4 ps-3 border border-[rgba(67,32,4,0.1)] hover:border-[#FEC53E] hover:scale-105 hover:shadow-md transition-all cursor-pointer"
+          >
+            <!-- left part  -->
+            <div
+              class="bg-[#FFF9F4] md:w-[86px] md:h-[86px] w-14 h-14 flex items-center justify-center p-4 rounded-lg"
+            >
+              <img class="w-[48px]" src="assets/dog-cartoon.png" alt="dog" />
+            </div>
+            <!-- right part  -->
+            <div>
+              <div class="flex items-center md:gap-3 gap-1 md:mb-2 mb-1">
+                <img
+                  class="sm:w-[18px] w-[12px]"
+                  src="assets/star.svg"
+                  alt="rating"
+                />
+                <p class="pt-1 sm:text-base text-[9px] font-medium">4.5</p>
+              </div>
+              <h3 class="sm:text-xl text-xs font-medium mb-1">Pet Bed</h3>
+              <p class="sm:text-base text-xs">$39.99</p>
+            </div>
+          </div>
+          <!-- small card last -->
+          <div
+            class="bg-white rounded-lg hidden xl:flex gap-4 md:py-4 py-3 md:ps-4 ps-3 border border-[rgba(67,32,4,0.1)] hover:border-[#FEC53E] hover:scale-105 hover:shadow-md transition-all cursor-pointer"
+          >
+            <!-- left part  -->
+            <div
+              class="bg-[#FFF9F4] md:w-[86px] md:h-[86px] w-14 h-14 flex items-center justify-center p-4 rounded-lg"
+            >
+              <img class="w-[48px]" src="assets/dog-cartoon.png" alt="dog" />
+            </div>
+            <!-- right part  -->
+            <div>
+              <div class="flex items-center gap-3 mb-2">
+                <img class="w-[18px]" src="assets/star.svg" alt="rating" />
+                <p class="pt-1">4.5</p>
+              </div>
+              <h3 class="md:text-xl text-xs font-medium mb-1">Pet Bed</h3>
+              <p class="md:text-base text- font-xs font-medium">$39.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
