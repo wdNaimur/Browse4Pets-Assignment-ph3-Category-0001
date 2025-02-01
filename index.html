@@ -18,15 +18,63 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome kit start  -->
+    <script
+      src="https://kit.fontawesome.com/013f22bfff.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom style  -->
     <style>
       * {
         font-family: "Sora", serif;
         color: #432004;
       }
       h1,
-      h2 {
+      h2,
+      h3 {
         font-family: "ADLaM Display", serif;
       }
+      .big-card-bg {
+        background: linear-gradient(109deg, #f8ccfb 1.27%, #acd2fd 100%);
+      }
+      .small-card-bg {
+        background: linear-gradient(109deg, #fff9f4 1.27%, #f9df8a 100%);
+      }
+      /* absolute container start */
+      .pawsome-container {
+        width: 100%;
+      }
+      @media (max-width: 640px) {
+        .pawsome-container {
+          width: 95%;
+        }
+      }
+      @media (min-width: 640px) {
+        .pawsome-container {
+          max-width: 608px;
+        }
+      }
+      @media (min-width: 768px) {
+        .pawsome-container {
+          max-width: 736px;
+        }
+      }
+      @media (min-width: 1024px) {
+        .pawsome-container {
+          max-width: 992px;
+        }
+      }
+      @media (min-width: 1280px) {
+        .pawsome-container {
+          max-width: 1248px;
+        }
+      }
+      @media (min-width: 1536px) {
+        .pawsome-container {
+          max-width: 1504px;
+        }
+      }
+      /* absolute container end */
     </style>
     <link
       rel="shortcut icon"
@@ -231,6 +279,7 @@
         </div>
       </section>
     </header>
+    <!-- Browse By Categories section start -->
     <section class="container mx-auto px-4 lg:mb-32 md:mb-24 mb-14">
       <h2 class="lg:text-4xl md:text-3xl text-2xl lg:mb-12 md:mb-10 mb-8">
         Browse By Categories
@@ -325,6 +374,7 @@
         </div>
       </div>
     </section>
+    <!-- Trending Pet Products section start -->
     <section class="md:bg-[#FFF9F4] bg-white mb-14 lg:mb-36 md:mb-24">
       <div class="container mx-auto px-4 lg:py-36 md:py-20 py-0">
         <h2 class="lg:text-4xl md:text-3xl text-2xl lg:mb-12 md:mb-10 mb-8">
@@ -350,9 +400,9 @@
               Find a pet
             </button>
             <img
-              class="absolute bottom-0 right-0 lg:w-[244px] md:w-[220px] w-[200px] z-0"
+              class="absolute bottom-0 right-0 lg:h-[75%] sm:h-[95%] h-[70%]"
               src="assets/cute-pet-mid.png"
-              alt=""
+              alt="dog"
             />
           </div>
           <!-- small card  -->
@@ -570,5 +620,158 @@
         </div>
       </div>
     </section>
+    <!-- Everyday low Price section start  -->
+    <section
+      class="container mx-auto px-4 lg:pb-[350px] md:pb-[260px] pb-[420px] relative"
+    >
+      <div class="">
+        <div class="container mx-auto px-4">
+          <h2 class="lg:text-4xl md:text-3xl text-2xl lg:mb-12 md:mb-10 mb-8">
+            Everyday low Price
+          </h2>
+        </div>
+        <div class="grid lg:grid-cols-5 grid-cols-1 gap-6">
+          <!-- first card  -->
+          <div
+            class="big-card-bg lg:ps-20 ps-12 lg:pt-32 pt-14 rounded-xl relative lg:col-span-3 h-[480px]"
+          >
+            <p class="text-xl mb-3 hidden lg:block">Under Price</p>
+            <h2 class="md:text-3xl text-2xl mb-2">T- Shirt For Dogs</h2>
+            <h3 class="text-white mb-4 hidden lg:block">(Easy Hair Removal)</h3>
+            <h3 class="text-6xl">$7.99</h3>
+            <img
+              class="absolute -bottom-5 right-0 lg:h-[90%] sm:h-[96%] h-[80%] lg:-right-7"
+              src="assets/cute-dog-mid.png"
+              alt="dog"
+            />
+          </div>
+          <div
+            class="small-card-bg ps-12 pt-14 rounded-xl relative lg:col-span-2 ] h-[480px]"
+          >
+            <h2 class="md:text-3xl text-2xl mb-2">T-Shirt for Dogs</h2>
+            <h3 class="text-6xl text-[#FFDC26]">$7.99</h3>
+            <img
+              class="absolute bottom-0 right-3 lg:h-[75%] sm:h-[85%] h-[75%]"
+              src="assets/cute-pet-mid.png"
+              alt="dog"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Get Pawsome News! section start -->
+      <div class="">
+        <div
+          class="bg-[#FFF9F4] absolute bottom-0 left-2/4 -translate-x-1/2 translate-y-1/2 rounded-2xl pawsome-container mx-auto hover:translate-y-[48%] transition-all hover:shadow-lg"
+        >
+          <div
+            class="grid md:grid-cols-3 grid-cols-1 lg:gap-28 md:gap-20 gap-8 py-9 lg:px-20 px-16"
+          >
+            <!-- img part  -->
+            <div class="">
+              <img class="mx-auto" src="assets/cute-pet-mid.png" alt="dog" />
+            </div>
+            <!-- text part  -->
+            <div class="md:col-span-2 md:flex md:flex-col md:justify-center">
+              <h2
+                class="md:text-4xl text-2xl lg:mb-5 md:mb-4 mb-3 md:text-start text-center"
+              >
+                Get Pawsome News!
+              </h2>
+              <p
+                class="sm:text-xl text-base md:text-start text-center lg:mb-9 mb-5 max-w-[90%]"
+              >
+                Exclusive training tips, ticks, product deals and more.
+              </p>
+              <input
+                class="bg-white md:max-w-[470px] w-full rounded-md md:p-4 p-2 focus:outline-[#F9DF8A] placeholder:text-[14px] placeholder:text-[#C4C4C4] lg:mb-9 md:mb-5 mb-3"
+                type="email"
+                placeholder="Enter email...."
+              />
+              <div class="flex justify-center md:justify-start">
+                <button
+                  class="btn bg-[#FEC53E] hover:bg-[#FEC53E] hover:border-[#FEC53E] hover:scale-105 hover:shadow-md"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-yellow-400 text-base-content lg:pt-[350px] md:pt-[260px] pt-[420px] pb-24 md:pb-28"
+    >
+      <div class="footer container px-4 mx-auto">
+        <nav>
+          <!-- logo  -->
+          <a
+            class="logo text-lg flex gap-3 -translate-x-1 hover:bg-transparent items-center mb-4"
+          >
+            <!-- logo img  -->
+            <img
+              class="md:w-[38px] w-[30px] md:h-[38px] h-[30px]"
+              src="assets/logo-footer.png"
+              alt="logo"
+            />
+            <!-- log text  -->
+            <span class="items-center md:text-2xl text-xl"
+              >Browse
+              <span class="text-[#2c2108] text-4xl font-bold -mb-1">4</span>
+              <span>Pets</span></span
+            >
+          </a>
+          <p class="opacity-75 md:text-xl text-base">
+            Discover a world of treats, toys, and <br />
+            essentials handpicked for your furry <br />
+            friends
+          </p>
+        </nav>
+        <nav class="gap-6 mt-auto">
+          <a
+            class="md:text-xl text-base hover:font-medium hover:bg-transparent cursor-pointer"
+            >Find a pet</a
+          >
+
+          <a
+            class="md:text-xl text-base hover:font-medium hover:bg-transparent cursor-pointer"
+            >Breeds</a
+          >
+
+          <a
+            class="md:text-xl text-base hover:font-medium hover:bg-transparent cursor-pointer"
+            >Contact us</a
+          >
+        </nav>
+        <nav class="mt-auto md:ms-auto">
+          <h6 class="footer-title opacity-100 md:text-base text-sm font-medium">
+            Follow Us
+          </h6>
+          <div class="grid grid-flow-col gap-4">
+            <a
+              ><i
+                class="fa-brands fa-facebook text-3xl hover:-translate-y-1 hover:shadow-sm transition-all opacity-90 hover:opacity-100 cursor-pointer"
+              ></i>
+            </a>
+            <a
+              ><i
+                class="fa-brands fa-instagram text-3xl hover:-translate-y-1 hover:shadow-sm transition-all opacity-90 hover:opacity-100 cursor-pointer"
+              ></i
+            ></a>
+            <a
+              ><i
+                class="fa-brands fa-linkedin text-3xl hover:-translate-y-1 hover:shadow-sm transition-all opacity-90 hover:opacity-100 cursor-pointer"
+              ></i
+            ></a>
+            <a
+              ><i
+                class="fa-brands fa-youtube text-3xl hover:-translate-y-1 hover:shadow-sm transition-all opacity-90 hover:opacity-100 cursor-pointer"
+              ></i
+            ></a>
+          </div>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
